@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ecf1f3">
+  <meta name="description" content="招聘 AI 故障演练：岗位串用、证据夸大、模型无响应。">
+  <title>招聘 AI 故障演练台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="mast"><span class="brand"><i aria-hidden="true"></i> 招聘实验室</span><span>虚构样本</span></header>
+    <section class="hero">
+      <div><p>RECRUITING HARNESS / 01</p><h1>招聘 AI 故障演练台<span>。</span></h1></div>
+      <svg class="trace" viewBox="0 0 390 110" aria-hidden="true">
+        <defs><pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M14 0H0v14" fill="none" stroke="#486079" stroke-opacity=".45"/></pattern></defs>
+        <rect width="390" height="110" rx="10" fill="url(#grid)"/>
+        <path d="M17 62H78l18-28h35l18 50h48l14-22h48m41 0h21l13-17h41" fill="none" stroke="#91d9cf" stroke-width="2"/>
+        <path d="M259 62h41" fill="none" stroke="#efad91" stroke-width="2" stroke-dasharray="3 5"/>
+        <circle cx="18" cy="62" r="4" fill="#91d9cf"/><circle cx="279" cy="62" r="12" fill="#26364a" stroke="#efad91" stroke-width="2"/>
+        <path d="M275 58l8 8m0-8-8 8" stroke="#efad91" stroke-width="1.5"/>
+        <circle cx="375" cy="45" r="4" fill="#91d9cf"/>
+        <text x="18" y="21">DRAFT</text><text x="254" y="92">CHECKPOINT</text><text x="336" y="24">REVIEW</text>
+      </svg>
+    </section>
+    <section class="controls" aria-label="演练设置">
+      <div class="job-control"><label for="job">当前岗位</label><select id="job"></select></div>
+      <div class="switches" id="scenarios" aria-label="演练情景"></div>
+    </section>
+    <section class="signal-strip" aria-labelledby="chain-title">
+      <h2 id="chain-title">检查路径</h2>
+      <ol id="steps"></ol>
+    </section>
+    <div class="desk">
+      <section class="sheet resume" aria-labelledby="sample-title">
+        <header><span class="kicker">原始材料</span><h2 id="sample-title">候选人 A</h2></header>
+        <p class="requirement"><span>当前硬条件</span> <strong id="requirement"></strong></p>
+        <ol id="resume"></ol>
+      </section>
+      <section class="sheet review" aria-labelledby="review-title">
+        <header><span class="kicker">草稿与拦截</span><h2 id="review-title">复核工作区</h2></header>
+        <div id="result" aria-live="polite"></div>
+        <details id="draft"><summary>查看原始草稿</summary><div id="draft-content"></div></details>
+      </section>
+    </div>
+    <noscript>请启用 JavaScript 后开始演练。</noscript>
+  </main>
+</body>
+</html>
